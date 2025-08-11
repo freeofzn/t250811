@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>MMORPG Office</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <canvas id="office" width="800" height="600"></canvas>
+    <div id="chat">
+      <div id="chat-messages"></div>
+      <input id="chat-input" maxlength="100" placeholder="메시지 입력 후 Enter" autocomplete="off">
+    </div>
+  </div>
+  <div id="nickname-modal" class="modal">
+    <div class="modal-content">
+      <h2>닉네임을 입력하세요</h2>
+      <input id="nickname-input" maxlength="12" autofocus autocomplete="off">
+      <button id="nickname-ok">입장</button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
