@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background: #e0e5ef;
+  font-family: 'Segoe UI', sans-serif;
+}
+#container {
+  width: 820px;
+  margin: 40px auto 0;
+}
+#office {
+  background: #fff;
+  border: 2px solid #3b3b3b;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px #8885;
+}
+#chat {
+  width: 800px;
+  margin: 10px auto 0;
+  background: #222;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px #8883;
+}
+#chat-messages {
+  height: 140px;
+  overflow-y: auto;
+  background: #23272e;
+  color: #fff;
+  padding: 7px;
+  font-size: 16px;
+}
+#chat-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 6px;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid #444;
+  background: #181d20;
+  color: #fff;
+  outline: none;
+  border-radius: 0 0 8px 8px;
+}
+
+
+/* 닉네임 입력 모달 */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.3);
+}
+.modal-content {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2em 3em;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 16px #6664;
+}
+#nickname-input {
+  font-size: 18px;
+  padding: 0.5em;
+  margin-top: 1em;
+  width: 180px;
+  text-align: center;
+}
+#nickname-ok {
+  font-size: 18px;
+  margin-top: 1em;
+  padding: 0.5em 2em;
+  background: #30aaff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
